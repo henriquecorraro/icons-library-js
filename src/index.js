@@ -4,15 +4,15 @@ import Icon from "./icons";
 
 import "./styles.css";
 const style = {
-  width: "50px",
-  height: "50px"
+  width: "200px",
+  height: "200px"
 }
 function App() {
   return (
     <div className="App">
       <div style={style}>
-        <Icon/>
-        </div>
+        <Icon name="user" color="#dd0000"/>
+      </div>
     </div>
   );
 }
