@@ -11,9 +11,14 @@ const Icon = props => {
   const regex = /^((left|right|center)|\s+)$/;
   const position = regex.test(props.position) ? props.position : "left";
   const color = Colors[props.color] ? props.color : colorDefault;
-  if(name === "error"){
+  if(name === "opaDeuRuim"){
     console.error("Ops! Icone informado ("+props.name+") não existe!");
   }
+  
+  const Div = styled.div`
+    display:block;
+    width:100%;  
+  `;
 
   const Svg = styled.svg.attrs({
     className: "icon-" + position
@@ -32,11 +37,9 @@ const Icon = props => {
       float:right;
     }
     &.icon-left {
-      float:left;
+      float:left
     }
     &.icon-center {
-      float:none;
-      display:block;
       margin-bottom:12px;
     }
   `;
