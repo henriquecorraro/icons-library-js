@@ -3,16 +3,20 @@ import ReactDOM from "react-dom";
 import Icon from "./icons";
 
 import "./styles.css";
+
 const style = {
-  width: "50px",
+  lineHeight: "18px",
+  fontSize: "14px",
+  textAlign: "center",
   height: "50px"
 }
+
 function App() {
   return (
     <div className="App">
       <div style={style}>
-        <Icon/>
-        </div>
+        <Icon name="checkbox" color="primaryDark" position="center"/>
+      </div>
     </div>
   );
 }
