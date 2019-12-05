@@ -14,11 +14,6 @@ const Icon = props => {
   if(name === "opaDeuRuim"){
     console.error("Ops! Icone informado ("+props.name+") não existe!");
   }
-  
-  const Div = styled.div`
-    display:block;
-    width:100%;  
-  `;
 
   const Svg = styled.svg.attrs({
     className: "icon-" + position
